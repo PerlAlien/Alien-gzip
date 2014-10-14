@@ -1,5 +1,0 @@
-Name: gzip
-Description: gzip
-Version: x.y
-Libs: 
-Cflags: 
