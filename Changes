@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.02      2014-10-14 07:41:36 -0400
   - use Alien::Base 0.006
 
 0.01      2014-10-13 12:27:02 -0400
