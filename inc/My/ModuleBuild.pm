@@ -10,9 +10,7 @@ sub alien_check_installed_version
 {
   my($self) = @_;
   my($stdout, $stderr, $ret) = capture { system 'gzip', '--version'; $? };
-  return if $ret;
-  return $1 if $stdout =~ /gzip ([0-9.]+)/i;
-  return 'unknown';
+  $ret ? () : $stdout =~ /gzip ([0-9.]+)/i && $1 || "unknown";
 }
 
 sub alien_check_built_version

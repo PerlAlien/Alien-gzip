@@ -11,7 +11,11 @@ use Env qw( @PATH );
 =head1 SYNOPSIS
 
  use Alien::gzip;
- # gzip should now be in your PATH if it wasn't already
+ use Env qw( @PATH );
+ 
+ # Add gzip to the path if it isn't there already
+ push @PATH, Alien::gzip->bin_dir;
+ 
 
 =head1 DESCRIPTION
 
@@ -23,16 +27,5 @@ it will download and install it into a private location so that
 it can be added to the C<PATH> when this module is used.
 
 =cut
-
-my $in_path;
-
-sub import
-{
-  return if __PACKAGE__->install_type('system');
-  return if $in_path;
-  unshift @PATH, File::Spec->catdir(__PACKAGE__->dist_dir, 'bin');
-  # only do it once.
-  $in_path = 1;
-}
 
 1;
