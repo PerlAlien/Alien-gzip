@@ -5,7 +5,10 @@ Find or build gzip
 # SYNOPSIS
 
     use Alien::gzip;
-    # gzip should now be in your PATH if it wasn't already
+    use Env qw( @PATH );
+    
+    # Add gzip to the path if it isn't there already
+    push @PATH, Alien::gzip->bin_dir;
 
 # DESCRIPTION
 
