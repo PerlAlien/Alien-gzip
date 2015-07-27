@@ -4,8 +4,6 @@ use strict;
 use warnings;
 use base qw( Alien::Base::ModuleBuild );
 use Capture::Tiny qw( capture );
-use Config;
-use File::Temp qw( tempdir );
 use File::chdir;
 
 sub alien_check_installed_version
