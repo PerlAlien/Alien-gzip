@@ -1,5 +1,6 @@
 Alien::Base
 Capture::Tiny
+File::ShareDir
 File::chdir
 Module::Build
 Test::More

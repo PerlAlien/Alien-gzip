@@ -8,23 +8,6 @@ use Config;
 use File::Temp qw( tempdir );
 use File::chdir;
 
-sub new
-{
-  my($class, %args) = @_;
-  
-  $args{alien_name} = 'gzip';
-  $args{alien_repository} = {
-    protocol => 'http',
-    host     => 'ftp.gnu.org',
-    location => "/gnu/gzip/",
-    pattern  => qr{^gzip-.*\.tar\.gz$},
-  };
-  
-  my $self = $class->SUPER::new(%args);
-  
-  $self;
-}
-
 sub alien_check_installed_version
 {
   my($self) = @_;
