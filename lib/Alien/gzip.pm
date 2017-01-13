@@ -3,7 +3,6 @@ package Alien::gzip;
 use strict;
 use warnings;
 use base qw( Alien::Base );
-use Env qw( @PATH );
 
 # ABSTRACT: Find or build gzip
 # VERSION
@@ -16,7 +15,6 @@ use Env qw( @PATH );
  # Add gzip to the path if it isn't there already
  push @PATH, Alien::gzip->bin_dir;
  
-
 =head1 DESCRIPTION
 
 Many environments provide the gzip command, but a few do not.
