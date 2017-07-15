@@ -2,6 +2,10 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+0.03      2017-07-15 14:38:09 -0400
+  - Migrate to Alien::Build + alienfile
+  - First CPAN release
+
 0.02      2014-10-14 07:41:36 -0400
   - use Alien::Base 0.006
 
