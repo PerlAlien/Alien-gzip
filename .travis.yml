@@ -8,8 +8,6 @@ sudo: false
 install:
   - cpanm -n Dist::Zilla
   - dzil authordeps --missing | cpanm -n
-  - cpanm -n Test::CPAN::Changes Test::EOL Test::Fixme Test::NoTabs Test::Pod::Spelling::CommonMistakes Test::Spelling Test::Strict Test::Version Test::Vars || true
-#  - cpanm -n Foo::Bar
 
 perl:
   - "5.14"
@@ -18,13 +16,14 @@ perl:
   - "5.20"
   - "5.22"
   - "5.24"
-
-#env:
-#  - FOO=bar
-
-#before_script: /bin/true
+  - "5.26"
 
 script:
   - dzil test -v
 
-#after_script: /bin/true
+env:
+  global:
+    - ALIEN_BASE_NO_ABMB=1
+  matrix:
+    - ALIEN_INSTALL_TYPE=share
+    - ALIEN_INSTALL_TYPE=system
