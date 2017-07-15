@@ -2,6 +2,9 @@ use alienfile;
 
 plugin 'Probe::CommandLine' => (
   command => 'gzip',
+  args    => [ '--version' ],
+  match   => qr/gzip/,
+  version => qr/gzip ([0-9\.]+)/,
 );
 
 share {

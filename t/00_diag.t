@@ -1,7 +1,7 @@
-use strict;
-use warnings;
+use Test2::V0;
 use Config;
-use Test::More tests => 1;
+
+eval q{ require Test::More };
 
 # This .t file is generated.
 # make changes instead to dist.ini
@@ -11,15 +11,22 @@ my $post_diag;
 
 $modules{$_} = $_ for qw(
   Alien::Base
-  Alien::Base::ModuleBuild
+  Alien::Build
+  Alien::Build::MM
   Capture::Tiny
-  File::ShareDir
+  ExtUtils::MakeMaker
   File::chdir
-  Module::Build
-  Test::More
+  Test2::V0
+  Test::Alien
 );
 
-
+$post_diag = sub {
+  require Alien::gzip;
+  diag "version       = ", Alien::gzip->version;
+  diag "bin_dir       = ", $_ for Alien::gzip->bin_dir;
+  diag "dist_dir      = ", Alien::gzip->dist_dir;
+  diag "install_type  = ", Alien::gzip->install_type;
+};
 
 my @modules = sort keys %modules;
 
@@ -63,7 +70,7 @@ if(@keys > 0)
 
 diag sprintf $format, 'perl ', $];
 
-foreach my $module (@modules)
+foreach my $module (sort @modules)
 {
   if(eval qq{ require $module; 1 })
   {
@@ -85,3 +92,4 @@ if($post_diag)
 
 spacer;
 
+done_testing;

@@ -24,6 +24,14 @@ it, then great, this module is a no-op.  If it does not, then
 it will download and install it into a private location so that
 it can be added to the C<PATH> when this module is used.
 
+=head1 SEE ALSO
+
+=over 4
+
+=item L<Alien>
+
+=back
+
 =cut
 
 1;

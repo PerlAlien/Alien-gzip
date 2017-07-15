@@ -19,6 +19,10 @@ it, then great, this module is a no-op.  If it does not, then
 it will download and install it into a private location so that
 it can be added to the `PATH` when this module is used.
 
+# SEE ALSO
+
+- [Alien](https://metacpan.org/pod/Alien)
+
 # AUTHOR
 
 Graham Ollis <plicease@cpan.org>
