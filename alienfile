@@ -9,6 +9,8 @@ plugin 'Probe::CommandLine' => (
 
 share {
 
+  meta->prop->{out_of_source} = 1;
+
   plugin Download => (
     url     => 'ftp://ftp.gnu.org/gnu/gzip/',
     filter  => qr/^gzip-.*\.tar\.xz$/,
