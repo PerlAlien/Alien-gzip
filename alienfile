@@ -23,5 +23,7 @@ share {
   plugin Extract => 'tar.xz';
   
   plugin 'Build::Autoconf' => ();
+  
+  test [ '%{make} check' ];
 
 };
