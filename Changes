@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+  - use http instead of ftp
 
 0.04_01   2017-09-14 16:40:31 -0400
   - use out-of-source build
