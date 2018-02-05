@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.04_02   2018-02-05 15:09:18 -0500
   - use http instead of ftp
 
 0.04_01   2017-09-14 16:40:31 -0400
