@@ -19,7 +19,7 @@ share {
   meta->prop->{out_of_source} = 1;
 
   plugin Download => (
-    url     => 'http://ftp.gnu.org/gnu/gzip/',
+    url     => 'https://ftp.gnu.org/gnu/gzip/',
     filter  => qr/^gzip-.*\.tar\.xz$/,
     version => qr/([0-9\.]+)/,
   );

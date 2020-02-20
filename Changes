@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+  - Use https instead of http
+  - Fix detection of bundled gzip on macOS
 
 0.05      2018-02-20 10:16:33 -0500
 
