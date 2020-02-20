@@ -33,6 +33,6 @@ share {
 
   build [ '%{configure}', '%{make}', '%{make} install' ];
   
-  test [ '%{make} check' ];
+  #test [ '%{make} check' ];
 
 };
