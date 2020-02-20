@@ -14,7 +14,7 @@ use base qw( Alien::Base );
  
  # Add gzip to the path if it isn't there already
  push @PATH, Alien::gzip->bin_dir;
- 
+
 =head1 DESCRIPTION
 
 Many environments provide the gzip command, but a few do not.
