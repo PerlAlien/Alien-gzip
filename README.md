@@ -4,11 +4,13 @@ Find or build gzip
 
 # SYNOPSIS
 
-    use Alien::gzip;
-    use Env qw( @PATH );
-    
-    # Add gzip to the path if it isn't there already
-    push @PATH, Alien::gzip->bin_dir;
+```perl
+use Alien::gzip;
+use Env qw( @PATH );
+
+# Add gzip to the path if it isn't there already
+push @PATH, Alien::gzip->bin_dir;
+```
 
 # DESCRIPTION
 
