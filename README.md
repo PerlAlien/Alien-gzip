@@ -1,4 +1,4 @@
-# Alien::gzip [![Build Status](https://secure.travis-ci.org/Perl5-Alien/Alien-gzip.png)](http://travis-ci.org/Perl5-Alien/Alien-gzip)
+# Alien::gzip [![Build Status](https://travis-ci.org/PerlAlien/Alien-gzip.svg)](http://travis-ci.org/PerlAlien/Alien-gzip)
 
 Find or build gzip
 
