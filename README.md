@@ -1,4 +1,4 @@
-# Alien::gzip [![Build Status](https://travis-ci.org/PerlAlien/Alien-gzip.svg?branch=main)](https://travis-ci.org/PerlAlien/Alien-gzip)
+# Alien::gzip ![static](https://github.com/PerlAlien/Alien-gzip/workflows/static/badge.svg) ![linux](https://github.com/PerlAlien/Alien-gzip/workflows/linux/badge.svg)
 
 Find or build gzip
 
