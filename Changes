@@ -1,6 +1,9 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+  - Update system probe to always accept gzip version
+    on stderr instead of stdout (as is the case for
+    NetBSD and macOS) (gh#9)
 
 0.06      2020-02-20 19:44:07 -0500
   - Use https instead of http
