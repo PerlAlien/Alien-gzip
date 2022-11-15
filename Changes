@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.07      2022-11-15 06:38:08 -0700
   - Update system probe to always accept gzip version
     on stderr instead of stdout (as is the case for
     NetBSD and macOS) (gh#9)
