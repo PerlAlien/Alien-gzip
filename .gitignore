@@ -1,2 +1,4 @@
 /Alien-gzip-*
 /.build
+*.old
+*.orig
